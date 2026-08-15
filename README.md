@@ -1,42 +1,26 @@
-# sv
+# DummyData
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A product listing app built to practice public API consumption with SvelteKit.
 
-## Creating a project
+## What this covers
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Fetching data from a public REST API using SvelteKit's `load` function
+- Svelte 5 syntax — `$props()` and `{@render children()}`
+- Reusable component with props (`Card.svelte`)
+- Tailwind CSS for styling
+- SvelteKit file-based routing
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## Tech Stack
 
-To recreate this project with the same configuration:
+SvelteKit · Svelte 5 · TypeScript · Tailwind CSS
 
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types jsdoc --add tailwindcss="plugins:none" --install npm .
-```
+## Running locally
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## API
 
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Uses [DummyJSON](https://dummyjson.com/) — a free fake REST API for testing.
